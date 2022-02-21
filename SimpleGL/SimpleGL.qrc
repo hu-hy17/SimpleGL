@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/shader">
+        <file>resources/shader/animate_mesh.vert</file>
+        <file>resources/shader/cube.vert</file>
+        <file>resources/shader/cylinder.vert</file>
+        <file>resources/shader/filter.vert</file>
+        <file>resources/shader/filter_inverse.frag</file>
+        <file>resources/shader/filter_none.frag</file>
+        <file>resources/shader/mesh.frag</file>
+        <file>resources/shader/mesh.vert</file>
+        <file>resources/shader/plane.frag</file>
+        <file>resources/shader/plane.vert</file>
+        <file>resources/shader/simpleObj.frag</file>
+        <file>resources/shader/skybox.frag</file>
+        <file>resources/shader/skybox.vert</file>
+        <file>resources/shader/sphere.vert</file>
+    </qresource>
+</RCC>

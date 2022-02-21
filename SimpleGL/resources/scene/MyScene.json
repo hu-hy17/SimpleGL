@@ -1,0 +1,60 @@
+{
+	"skybox":
+	[
+		"resources/skybox/Sky_Cartoon_BlueSkyPainted_NoSun_Cam_2_Left+X.png",
+		"resources/skybox/Sky_Cartoon_BlueSkyPainted_NoSun_Cam_3_Right-X.png",
+		"resources/skybox/Sky_Cartoon_BlueSkyPainted_NoSun_Cam_4_Up+Y.png",
+		"resources/skybox/Sky_Cartoon_BlueSkyPainted_NoSun_Cam_5_Down-Y.png",
+		"resources/skybox/Sky_Cartoon_BlueSkyPainted_NoSun_Cam_0_Front+Z.png",
+		"resources/skybox/Sky_Cartoon_BlueSkyPainted_NoSun_Cam_1_Back-Z.png"
+	],
+
+	"objects": [
+		{
+			"type": "StaticModel",
+			"name": "Lifu",
+			"fromfile": "resources/model/QR1LifuMd010011 #1294023/QR1LifuMd010011 #1294023.fbx",
+			// "animationIdx": 30,
+			// "speedup": 1,
+			"motion": [ 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0.02 ],
+			"material": {
+				"name": "jade"
+			}
+		},
+		{
+			"type": "StaticModel",
+			"name": "Luxiya",
+			"fromfile": "resources/model/QR1LuxiyaMd010011/QR1LuxiyaMd010011.fbx",
+			// "animationIdx": 37,
+			// "speedup": 0.5,
+			"motion": [ 1, 0, 0, -1, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0.02 ],
+			"material": {
+				"name": "default"
+			}
+		},
+			{
+				"type": "Sphere",
+				"center": [ 0, 20, 0 ],
+				"radius": 30,
+				"color": [ 1.0, 1.0, 1.0, 0.5 ],
+				"material": {
+					"name": "default",
+					"Il": 0.3,
+					"ior": 1.0,
+					"F0": [ 0.4, 0.4, 0.4 ]
+				}
+			},
+			{
+				"type": "Mirror",
+				"width": 300,
+				"height": 300,
+				"motion": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 100, 0, 0, 0, 1 ],
+				"material": {
+					"name": "default",
+					"Il": 0.0,
+					"ior": 1.0,
+					"F0": [ 1.0, 1.0, 1.0 ]
+				}
+			}
+	]
+}

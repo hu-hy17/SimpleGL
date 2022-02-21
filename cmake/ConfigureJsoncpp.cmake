@@ -1,0 +1,3 @@
+add_subdirectory(${JSONCPP_ROOT_DIRS})
+
+set(JSONCPP_INCLUDE_DIRS ${JSONCPP_ROOT_DIRS}/include)
