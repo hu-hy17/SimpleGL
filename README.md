@@ -2,7 +2,7 @@
 
 #### 一.简介
 
-​	SimpleGL是一个基于QT（https://www.qt.io/）和openGL编写的静态场景渲染程序，它具备如下的功能：
+​	SimpleGL是一个基于QT（https://www.qt.io/） 和openGL编写的静态场景渲染程序，它具备如下的功能：
 
 - 通过json格式的配置文件在场景中定义一些简单的几何体（球，立方体，圆柱等），设置它们的基本参数（旋转平移，颜色，材质），以及设置天空盒。
 - 加载外部静态模型文件（如.obj）或者带有骨骼动画的模型文件（如.fbx）并在场景中渲染或生成动画。
@@ -12,11 +12,11 @@
 
 ​	**骨骼动画**
 
- <img src="E:\ProjectManage\SimpleGL\img\animation.gif" style="zoom: 40%;" />
+ <img src="img\animation.gif" width="500px" />
 
 ​	**光线追踪**
 
- <img src="E:\ProjectManage\SimpleGL\img\RT1.png" alt="RT1" style="zoom: 40%;" />
+ <img src="img\RT1.png" alt="RT1" width="500px" />
 
 #### 三.环境搭建
 
@@ -64,13 +64,13 @@
 #### 四.命令行选项
 
 ```
-SimpleGL [-useRT {0|1}] [-t thread_num] [-scene scene_filename]
+simpleGL [-useRT {0|1}] [-t thread_num] [-scene scene_filename]
 ```
 
-==-useRT== 是否使用光线追踪渲染 0 - 否 1 - 是，默认为0
+-useRT 是否使用光线追踪渲染 0 - 否 1 - 是，默认为0
 
-==-t== 在使用光线追踪时，调度的CPU线程个数，最少为1，默认为4
+-t 在使用光线追踪时，调度的CPU线程个数，最少为1，默认为4
 
-==-scene== 场景文件路径，默认为`resources/scene/MyScene.json`
+-scene 场景文件路径，默认为`resources/scene/MyScene.json`
 
 **暂不支持利用光线追踪对骨骼动画进行渲染**
